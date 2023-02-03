@@ -1,0 +1,23 @@
+
+
+opcao = 0
+
+while opcao != 3:
+    print("""\nEscolha uma opção: 
+          1. Converta metros para quilômetros;
+          2. Converta litros para metros cúbicos;
+          3. Finalizar o Programa.
+          """)
+    opcao = int(input("Escolha uma Opção: "))
+
+    if opcao == 1:
+        metros = float(input("Digite a distância em metros: "))
+        print(f"Distância em quilômetros é: {metros/1000} km.")
+    if opcao == 2:
+        litros = float(input("Digite a quantidade em Litros: "))
+        print(f"Quantidade em metros cúbicos: {litros/1000}m³.")
+    if opcao == 3:
+        break    
+    else:
+        print("Tente Novamente!")
+print("Obrigado volte sempre")
